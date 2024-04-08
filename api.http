@@ -1,0 +1,32 @@
+POST http://localhost:3333/events/
+Content-Type: application/json
+
+{
+    "title": "Teste limite de convidados",
+    "details": null,
+    "maximumAttendees": 1
+}
+
+### 
+POST http://localhost:3333/events/a5d7dd29-2277-4d67-b0fb-3dae1d4599fb/events
+Content-Type: application/json
+
+{
+    "name": "Joãozinho",
+    "email": "Joãodailsa@sgmail.com"
+}
+
+###
+GET http://localhost:3333/events/8d800a1a-c474-4ef8-872d-9071530a9d2casa
+Content-Type: application/json
+
+###
+GET http://localhost:3333/attendees/3/badge
+Content-Type: application/json
+
+###
+GET http://localhost:3333/attendees/1/check-in
+Content-Type: application/json
+###
+GET http://localhost:3333/events/8d800a1a-c474-4ef8-872d-9071530a9d2c/attendees?query=ped
+Content-Type: application/json
